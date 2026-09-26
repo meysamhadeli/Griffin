@@ -1,4 +1,5 @@
 using MediatR;
+using MassTransit;
 
 namespace Woo.Core.Event;
 

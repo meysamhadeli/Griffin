@@ -6,9 +6,6 @@
   <Folder Name="/src/Core/">
     <Project Path="src/Core/Woo.Core.csproj" />
   </Folder>
-  <Folder Name="/src/Dependencies/">
-    <Project Path="src/Dependencies/Woo.Dependencies.csproj" />
-  </Folder>
   <Folder Name="/src/EFCore/">
     <Project Path="src/EFCore/Woo.EFCore.csproj" />
   </Folder>

@@ -11,6 +11,7 @@
 <p align="center">
 	<img src="https://img.shields.io/badge/.NET-10.0-512BD4?style=flat-square" alt=".NET 10">
 	<img src="https://img.shields.io/badge/license-MIT-2ea44f?style=flat-square" alt="MIT License">
+	<img src="https://img.shields.io/badge/AI--Ready-11%2F12-brightgreen?style=flat-square" alt="AI-Ready 11 of 12">
 </p>
 
 ## Contents
@@ -140,7 +141,7 @@ app.Run();
 | `Woo.TestBase` | Shared test fixtures and integration-test support |
 | `Woo.Utils` | General-purpose shared utilities |
 
-`Woo.Dependencies` centralizes the external package versions used by the modules. It is an internal project reference and is not intended to be an application feature module.
+Each library declares the NuGet packages it uses directly. Project references connect library APIs and are kept local to the modules that consume them.
 
 ## Configuration
 
@@ -169,11 +170,7 @@ dotnet restore woo.slnx
 dotnet build woo.slnx
 ```
 
-Run tests with:
-
-```bash
-dotnet test woo.slnx
-```
+There is no test project in the solution currently. `Woo.TestBase` provides shared fixtures and Testcontainers support for downstream integration tests.
 
 Format changed C# files with the normal .NET formatter when needed:
 
