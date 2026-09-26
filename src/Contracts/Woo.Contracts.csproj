@@ -1,7 +1,0 @@
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup><TargetFramework>net10.0</TargetFramework><RootNamespace>Woo.Contracts</RootNamespace><AssemblyName>Woo.Contracts</AssemblyName></PropertyGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Dependencies\Woo.Dependencies.csproj" />
-    <ProjectReference Include="..\Core\Woo.Core.csproj" />
-  </ItemGroup>
-</Project>

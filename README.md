@@ -79,13 +79,7 @@ It is intentionally not a full application template. A small CRUD API may need o
 
 ## Installation
 
-Woo is currently organized as a source-based multi-project library. Reference the root project when you want the complete set of modules:
-
-```xml
-<ProjectReference Include="path/to/woo/src/Woo.csproj" />
-```
-
-For a smaller dependency surface, reference only the project your service needs, such as `Woo.Core`, `Woo.Web`, `Woo.EFCore`, or `Woo.Mongo`.
+Woo is organized as a source-based multi-project library. Reference only the project your service needs, such as `Woo.Core`, `Woo.Web`, `Woo.EFCore`, or `Woo.Mongo`.
 
 ## Quick Start
 
@@ -128,7 +122,6 @@ app.Run();
 | Project | Purpose |
 | --- | --- |
 | `Woo.Core` | Domain, CQRS, events, exceptions, and pagination contracts |
-| `Woo.Contracts` | Shared contract and event message types |
 | `Woo.Web` | Minimal endpoints, API versioning, options, correlation IDs, and web helpers |
 | `Woo.EFCore` | EF Core and PostgreSQL context, migration, seeding, and transaction helpers |
 | `Woo.Mongo` | MongoDB contexts, repositories, and unit-of-work abstractions |
@@ -172,14 +165,14 @@ Prefer environment variables or a secret store for credentials in deployed envir
 Restore and build the complete library from the repository root:
 
 ```bash
-dotnet restore src/Woo.csproj
-dotnet build src/Woo.csproj
+dotnet restore woo.slnx
+dotnet build woo.slnx
 ```
 
 Run tests with:
 
 ```bash
-dotnet test src/Woo.csproj
+dotnet test woo.slnx
 ```
 
 Format changed C# files with the normal .NET formatter when needed:
