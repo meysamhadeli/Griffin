@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework><RootNamespace>Woo.HealthCheck</RootNamespace><AssemblyName>Woo.HealthCheck</AssemblyName></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dependencies\Woo.Dependencies.csproj" />
+    <ProjectReference Include="..\EFCore\Woo.EFCore.csproj" />
+    <ProjectReference Include="..\EventStoreDB\Woo.EventStoreDB.csproj" />
+    <ProjectReference Include="..\Mongo\Woo.Mongo.csproj" />
+    <ProjectReference Include="..\Web\Woo.Web.csproj" />
+    <ProjectReference Include="..\Wolverine\Woo.Wolverine.csproj" />
+  </ItemGroup>
+</Project>

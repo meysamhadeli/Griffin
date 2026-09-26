@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework><RootNamespace>Woo.TestBase</RootNamespace><AssemblyName>Woo.TestBase</AssemblyName></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dependencies\Woo.Dependencies.csproj" />
+    <ProjectReference Include="..\Core\Woo.Core.csproj" />
+    <ProjectReference Include="..\EFCore\Woo.EFCore.csproj" />
+    <ProjectReference Include="..\Mongo\Woo.Mongo.csproj" />
+    <ProjectReference Include="..\Web\Woo.Web.csproj" />
+  </ItemGroup>
+</Project>

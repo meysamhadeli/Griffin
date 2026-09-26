@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <AssemblyName>Woo</AssemblyName>
+    <RootNamespace>Woo</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="Caching\Woo.Caching.csproj" />
+    <ProjectReference Include="Contracts\Woo.Contracts.csproj" />
+    <ProjectReference Include="Core\Woo.Core.csproj" />
+    <ProjectReference Include="EFCore\Woo.EFCore.csproj" />
+    <ProjectReference Include="EventStoreDB\Woo.EventStoreDB.csproj" />
+    <ProjectReference Include="HealthCheck\Woo.HealthCheck.csproj" />
+    <ProjectReference Include="Jwt\Woo.Jwt.csproj" />
+    <ProjectReference Include="Logging\Woo.Logging.csproj" />
+    <ProjectReference Include="Mapster\Woo.Mapster.csproj" />
+    <ProjectReference Include="Mongo\Woo.Mongo.csproj" />
+    <ProjectReference Include="OpenApi\Woo.OpenApi.csproj" />
+    <ProjectReference Include="OpenTelemetryCollector\Woo.OpenTelemetryCollector.csproj" />
+    <ProjectReference Include="Polly\Woo.Polly.csproj" />
+    <ProjectReference Include="ProblemDetails\Woo.ProblemDetails.csproj" />
+    <ProjectReference Include="TestBase\Woo.TestBase.csproj" />
+    <ProjectReference Include="Utils\Woo.Utils.csproj" />
+    <ProjectReference Include="Validation\Woo.Validation.csproj" />
+    <ProjectReference Include="Web\Woo.Web.csproj" />
+    <ProjectReference Include="Wolverine\Woo.Wolverine.csproj" />
+  </ItemGroup>
+</Project>
