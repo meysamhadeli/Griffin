@@ -2,28 +2,50 @@ name: CI
 
 on:
   push:
-    paths-ignore:
-      - '**/*.md'
-      - 'assets/**'
+    branches: [ "main"]
   pull_request:
+    branches: [ "main"]
     paths-ignore:
-      - '**/*.md'
-      - 'assets/**'
-
+      - "README.md"
 permissions:
   contents: read
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.sha }}
+  cancel-in-progress: true
+
 jobs:
-  build:
+  ci:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '10.0.x'
+
       - name: Restore
         run: dotnet restore woo.slnx
+
       - name: Build
         run: dotnet build woo.slnx --no-restore --configuration Release
+
+      - name: Test
+        shell: bash
+        run: |
+          test_projects=$(find . -name '*.csproj' -not -path './src/TestBase/*' -print0 \
+            | xargs -0 grep -lE 'Microsoft\.NET\.Test\.Sdk|<IsTestProject>true</IsTestProject>' || true)
+
+          if [[ -z "$test_projects" ]]; then
+            echo "::notice::No test projects found; skipping tests."
+            exit 0
+          fi
+
+          while IFS= read -r project; do
+            dotnet test "$project" --no-build --no-restore --configuration Release
+          done <<< "$test_projects"
+
+# NuGet publishing runs only when a GitHub release is published.
+

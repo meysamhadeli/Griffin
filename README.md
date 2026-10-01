@@ -80,7 +80,15 @@ It is intentionally not a full application template. A small CRUD API may need o
 
 ## Installation
 
-Woo is organized as a source-based multi-project library. Reference only the project your service needs, such as `Woo.Core`, `Woo.Web`, `Woo.EFCore`, or `Woo.Mongo`.
+Each Woo module is published as an independent NuGet package. All modules use the same version from each GitHub release. Install only the packages your service needs:
+
+```bash
+dotnet add package Woo.Core
+dotnet add package Woo.Web
+dotnet add package Woo.EFCore
+```
+
+When a GitHub release is published, the publish workflow pushes every library package to NuGet.org using that release tag's version. The repository requires an Actions secret named `NUGET_API_KEY` containing a NuGet.org API key with package push permissions.
 
 ## Quick Start
 

@@ -6,6 +6,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+
+- Automatically publish every Woo class library to NuGet.org with the shared version when a GitHub release is published.
+
 ### Changed
 
 - Each Woo class library owns its direct NuGet dependencies; the former shared dependency project was removed.

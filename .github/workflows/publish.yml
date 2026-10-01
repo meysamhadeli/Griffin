@@ -1,0 +1,94 @@
+name: Publish NuGet packages
+
+on:
+  release:
+    types:
+      - published
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Package version to publish, for example 1.0.1
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out release source
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.release.tag_name || github.ref }}
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Validate release version and NuGet API key
+        shell: bash
+        env:
+          RELEASE_TAG: ${{ github.event_name == 'workflow_dispatch' && inputs.version || github.event.release.tag_name }}
+          NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+        run: |
+          package_version="${RELEASE_TAG#v}"
+          if [[ ! "$package_version" =~ ^[0-9]+\.[0-9]+\.[0-9]+(-[0-9A-Za-z.-]+)?(\+[0-9A-Za-z.-]+)?$ ]]; then
+            echo "::error::Release tag '$RELEASE_TAG' is not a supported NuGet version tag."
+            exit 1
+          fi
+          if [[ -z "$NUGET_API_KEY" ]]; then
+            echo "::error::Add NUGET_API_KEY as a repository Actions secret."
+            exit 1
+          fi
+          echo "PACKAGE_VERSION=$package_version" >> "$GITHUB_ENV"
+
+      - name: Restore
+        run: dotnet restore woo.slnx
+
+      - name: Build release
+        run: dotnet build woo.slnx --no-restore --configuration Release -p:Version="$PACKAGE_VERSION"
+
+      - name: Pack all Woo libraries
+        shell: bash
+        run: |
+          mkdir -p artifacts/packages
+          while IFS= read -r -d '' project; do
+            dotnet pack "$project" \
+              --no-restore \
+              --no-build \
+              --configuration Release \
+              --output artifacts/packages \
+              -p:Version="$PACKAGE_VERSION" \
+              -p:PackageVersion="$PACKAGE_VERSION"
+          done < <(find src -type f -name '*.csproj' -print0 | sort -z)
+
+      - name: Verify all libraries were packed
+        shell: bash
+        run: |
+          project_count=$(find src -type f -name '*.csproj' | wc -l)
+          package_count=$(find artifacts/packages -maxdepth 1 -name '*.nupkg' | wc -l)
+          if [[ "$project_count" -ne "$package_count" ]]; then
+            echo "::error::Expected $project_count packages, but produced $package_count."
+            exit 1
+          fi
+
+      - name: Push packages to NuGet.org
+        shell: bash
+        env:
+          NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+        run: |
+          shopt -s nullglob
+          packages=(artifacts/packages/*.nupkg)
+          if [[ ${#packages[@]} -eq 0 ]]; then
+            echo "::error::No NuGet packages were produced."
+            exit 1
+          fi
+          for package in "${packages[@]}"; do
+            dotnet nuget push "$package" \
+              --api-key "$NUGET_API_KEY" \
+              --source https://api.nuget.org/v3/index.json \
+              --skip-duplicate
+          done
