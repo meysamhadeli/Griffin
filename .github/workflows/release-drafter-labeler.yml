@@ -17,9 +17,4 @@ jobs:
  auto-labeler:
    runs-on: ubuntu-latest
    steps:
-     - uses: release-drafter/release-drafter@v5
-       with:
-         config-name: release-drafter.yml
-         disable-releaser: true # only run auto-labeler for PRs
-       env:
-         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+     - uses: release-drafter/release-drafter/autolabeler@v7
