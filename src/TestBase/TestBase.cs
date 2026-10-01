@@ -138,8 +138,8 @@ public class TestFixture<TEntryPoint> : IAsyncLifetime
         if (!_initialized)
             return;
 
-        await StopTestContainerAsync();
         await _factory.DisposeAsync();
+        await StopTestContainerAsync();
         await CancellationTokenSource.CancelAsync();
         RestoreEnvironmentVariables();
     }
