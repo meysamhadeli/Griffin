@@ -50,7 +50,7 @@ There are currently no test project files in the solution. Do not add a `dotnet 
 
 ## CI/CD
 
-`.github/workflows/ci.yml` builds the solution on pushes and pull requests. `.github/workflows/copilot-setup-steps.yml` prepares the same .NET build environment for coding agents. `.github/workflows/release-drafter.yml` remains the release-note automation.
+`.github/workflows/ci.yml` restores, builds, and tests on pushes and pull requests. `.github/workflows/publish.yml` runs when a GitHub release is published, packs every `src` class library at the release tag's shared version, and pushes packages to NuGet.org. Configure the repository Actions secret `NUGET_API_KEY` with a NuGet.org key that can push all Woo package IDs. `.github/workflows/copilot-setup-steps.yml` prepares the .NET build environment for coding agents.
 
 ## Documentation Status
 
