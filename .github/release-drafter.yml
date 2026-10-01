@@ -48,7 +48,8 @@ categories:
       - deps
       - dependencies
   - title: 🧰 Maintenance
-    label: 'chore'
+    labels:
+      - chore
   - title: 📝 Other changes
 ## putting no labels pr to `Other Changes` category with no label - https://github.com/release-drafter/release-drafter/issues/139#issuecomment-480473934
 
