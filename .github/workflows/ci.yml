@@ -2,28 +2,31 @@ name: CI
 
 on:
   push:
+    branches: [ "main"]
     paths-ignore:
-      - '**/*.md'
-      - 'assets/**'
+      - "README.md"
   pull_request:
+    branches: [ "main"]
     paths-ignore:
-      - '**/*.md'
-      - 'assets/**'
-
-permissions:
-  contents: read
+      - "README.md"
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.sha }}
+  cancel-in-progress: true
 
 jobs:
-  build:
+  ci:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: '10.0.x'
-      - name: Restore
-        run: dotnet restore woo.slnx
-      - name: Build
-        run: dotnet build woo.slnx --no-restore --configuration Release
+      - uses: actions/checkout@v4
+
+      - name: Update Release Drafter
+        if: ${{ github.ref == 'refs/heads/main' && success() }}
+        id: last_release
+        uses: release-drafter/release-drafter@v5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Release Version Info
+        run:
+          echo "Release version is:" ${{ steps.last_release.outputs.tag_name }}
