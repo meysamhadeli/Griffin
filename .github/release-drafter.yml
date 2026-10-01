@@ -95,28 +95,28 @@ exclude-labels:
 autolabeler:
   - label: 'feature'
     branch:
-      - '/^(feat|feature)\\/.*/'
+      - '/^(feat|feature)\/.*/'
   - label: 'bug'
     branch:
-      - '/^(fix|bug)\\/.*/'
+      - '/^(fix|bug)\/.*/'
   - label: 'documentation'
     branch:
-      - '/^(docs|documentation)\\/.*/'
+      - '/^(docs|documentation)\/.*/'
   - label: 'test'
     branch:
-      - '/^test\\/.*/'
+      - '/^test\/.*/'
   - label: 'refactor'
     branch:
-      - '/^refactor\\/.*/'
+      - '/^refactor\/.*/'
   - label: 'ci'
     branch:
-      - '/^(ci|build)\\/.*/'
+      - '/^(ci|build)\/.*/'
   - label: 'security'
     branch:
-      - '/^security\\/.*/'
+      - '/^security\/.*/'
   - label: 'minor'
     branch:
-      - '/^(feat|feature)\\/.*/'
+      - '/^(feat|feature)\/.*/'
   - label: 'patch'
     branch:
-      - '/^(fix|bug)\\/.*/'
+      - '/^(fix|bug)\/.*/'

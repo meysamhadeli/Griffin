@@ -119,7 +119,7 @@ public static class TestContainers
         public string Name { get; set; } = "rabbitmq_" + Guid.NewGuid();
         public int Port { get; set; } = 5672;
         public int ApiPort { get; set; } = 15672;
-        public string ImageName { get; set; } = "rabbitmq:management";
+        public string ImageName { get; set; } = "rabbitmq:4.3.6-management";
         public string UserName { get; set; } = "guest";
         public string Password { get; set; } = "guest";
     }
@@ -128,7 +128,7 @@ public static class TestContainers
     {
         public string Name { get; set; } = "postgreSql_" + Guid.NewGuid().ToString("D");
         public int Port { get; set; } = 5432;
-        public string ImageName { get; set; } = "postgres:latest";
+        public string ImageName { get; set; } = "postgres:17";
         public string UserName { get; set; } = Guid.NewGuid().ToString("D");
         public string Password { get; set; } = Guid.NewGuid().ToString("D");
     }
@@ -137,7 +137,7 @@ public static class TestContainers
     {
         public string Name { get; set; } = "postgreSql_" + Guid.NewGuid().ToString("D");
         public int Port { get; set; } = 5432;
-        public string ImageName { get; set; } = "postgres:latest";
+        public string ImageName { get; set; } = "postgres:17";
         public string UserName { get; set; } = Guid.NewGuid().ToString("D");
         public string Password { get; set; } = Guid.NewGuid().ToString("D");
     }
@@ -146,7 +146,7 @@ public static class TestContainers
     {
         public string Name { get; set; } = "mongo_" + Guid.NewGuid().ToString("D");
         public int Port { get; set; } = 27017;
-        public string ImageName { get; set; } = "mongo:latest";
+        public string ImageName { get; set; } = "mongo:8.0";
         public string UserName { get; set; } = Guid.NewGuid().ToString("D");
         public string Password { get; set; } = Guid.NewGuid().ToString("D");
     }
@@ -155,6 +155,6 @@ public static class TestContainers
     {
         public string Name { get; set; } = "event_store_" + Guid.NewGuid().ToString("D");
         public int Port { get; set; } = 2113;
-        public string ImageName { get; set; } = "eventstore/eventstore:latest";
+        public string ImageName { get; set; } = "eventstore/eventstore:24.10.5-bookworm-slim";
     }
 }
