@@ -62,33 +62,53 @@ autolabeler:
   - label: 'chore'
     branch:
       - '/(chore)\/.*/'
+    title:
+      - '/^chore(\([^)]*\))?:/'
   - label: 'security'
     branch:
       - '/(security)\/.*/'
+    title:
+      - '/^security(\([^)]*\))?:/'
   - label: 'refactor'
     branch:
       - '/(refactor)\/.*/'
+    title:
+      - '/^refactor(\([^)]*\))?:/'
   - label: 'docs'
     branch:
       - '/(docs)\/.*/'
+    title:
+      - '/^docs(\([^)]*\))?:/'
   - label: 'ci'
     branch:
       - '/(ci)\/.*/'
+    title:
+      - '/^ci(\([^)]*\))?:/'
   - label: 'test'
     branch:
       - '/(test)\/.*/'
+    title:
+      - '/^test(\([^)]*\))?:/'
   - label: 'bug'
     branch:
       - '/(fix)\/.*/'
+    title:
+      - '/^fix(\([^)]*\))?:/'
   - label: 'feature'
     branch:
       - '/(feat)\/.*/'
+    title:
+      - '/^feat(\([^)]*\))?:/'
   - label: 'minor'
     branch:
       - '/(feat)\/.*/'
+    title:
+      - '/^feat(\([^)]*\))?:/'
   - label: 'patch'
     branch:
       - '/(fix)\/.*/'
+    title:
+      - '/^fix(\([^)]*\))?:/'
     body:
       - '/JIRA-[0-9]{1,4}/'
 
