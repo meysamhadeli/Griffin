@@ -1,5 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup><TargetFramework>net10.0</TargetFramework><RootNamespace>Woo.HealthCheck</RootNamespace><AssemblyName>Woo.HealthCheck</AssemblyName></PropertyGroup>
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework><PackageId>CodeDev.Woo.HealthCheck</PackageId><RootNamespace>Woo.HealthCheck</RootNamespace><AssemblyName>Woo.HealthCheck</AssemblyName></PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\EFCore\Woo.EFCore.csproj" />
     <ProjectReference Include="..\EventStoreDB\Woo.EventStoreDB.csproj" />

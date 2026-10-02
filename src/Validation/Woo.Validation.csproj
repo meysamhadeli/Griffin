@@ -1,5 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup><TargetFramework>net10.0</TargetFramework><RootNamespace>Woo.Validation</RootNamespace><AssemblyName>Woo.Validation</AssemblyName></PropertyGroup>
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework><PackageId>CodeDev.Woo.Validation</PackageId><RootNamespace>Woo.Validation</RootNamespace><AssemblyName>Woo.Validation</AssemblyName></PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core\Woo.Core.csproj" />
     <PackageReference Include="FluentValidation" Version="12.1.1" />
