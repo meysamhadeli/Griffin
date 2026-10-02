@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
+    <PackageId>CodeDev.Woo.Caching</PackageId>
     <RootNamespace>Woo.Caching</RootNamespace>
     <AssemblyName>Woo.Caching</AssemblyName>
   </PropertyGroup>
