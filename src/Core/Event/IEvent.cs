@@ -1,7 +1,7 @@
 using MediatR;
 using MassTransit;
 
-namespace Woo.Core.Event;
+namespace Griffin.Core.Event;
 
 public interface IEvent : INotification
 {

@@ -8,7 +8,7 @@ This is great that you'd like to contribute to this project. All change requests
 
 ## Conventional commits
 
-Our repository follows [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#summary). Release Drafter maintains a draft release; when a maintainer publishes it, the NuGet workflow publishes every Woo library with the release's shared version. Branch labels select minor or patch increments; patch is the default, and maintainers can apply the `major` label for a breaking release.
+Our repository follows [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#summary). Release Drafter maintains a draft release; when a maintainer publishes it, the NuGet workflow publishes every Griffin library with the release's shared version. Branch labels select minor or patch increments; patch is the default, and maintainers can apply the `major` label for a breaking release.
 
 Pull requests should have a title that follows the specification, otherwise, merging is blocked. If you are not familiar with the specification simply ask maintainers to modify. You can also use this cheatsheet if you want:
 

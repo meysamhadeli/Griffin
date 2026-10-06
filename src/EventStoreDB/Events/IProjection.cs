@@ -1,4 +1,4 @@
-namespace Woo.EventStoreDB.Events;
+namespace Griffin.EventStoreDB.Events;
 
 public interface IProjection
 {

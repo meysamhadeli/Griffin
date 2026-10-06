@@ -1,6 +1,6 @@
 using MediatR;
 
-namespace Woo.Core.CQRS;
+namespace Griffin.Core.CQRS;
 
 public interface ICommand : ICommand<Unit>
 {

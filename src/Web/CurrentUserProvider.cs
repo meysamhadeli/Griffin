@@ -1,7 +1,7 @@
 using System.Security.Claims;
 using Microsoft.AspNetCore.Http;
 
-namespace Woo.Web;
+namespace Griffin.Web;
 
 public interface ICurrentUserProvider
 {

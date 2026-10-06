@@ -1,12 +1,12 @@
 <p align="center">
-	<img src="assets/woo-logo.png" alt="Woo library logo" width="180">
+	<img src="assets/griffin-logo.png" alt="Griffin library logo" width="180">
 </p>
 
-<h1 align="center">Woo</h1>
+<h1 align="center">Griffin</h1>
 
 <p align="center">Reusable .NET building blocks for production-ready web services.</p>
 
-<p align="center">Woo provides composable infrastructure for ASP.NET Core, CQRS, domain-driven design, event-driven messaging, persistence, testing, and observability.</p>
+<p align="center">Griffin provides composable infrastructure for ASP.NET Core, CQRS, domain-driven design, event-driven messaging, persistence, testing, and observability.</p>
 
 <p align="center">
 	<img src="https://img.shields.io/badge/.NET-10.0-512BD4?style=flat-square" alt=".NET 10">
@@ -16,10 +16,10 @@
 
 ## Contents
 
-- [What Woo Provides](#what-woo-provides)
+- [What Griffin Provides](#what-griffin-provides)
 - [Goals](#goals)
 - [Technology](#technology)
-- [When to Use Woo](#when-to-use-woo)
+- [When to Use Griffin](#when-to-use-griffin)
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Quick Start](#quick-start)
@@ -30,7 +30,7 @@
 - [Contribution](#contribution)
 - [License](#license)
 
-## What Woo Provides
+## What Griffin Provides
 
 - CQRS contracts and domain model primitives for commands, queries, entities, aggregates, events, and pagination.
 - Vertical-slice-friendly ASP.NET Core conventions for minimal endpoints, API versioning, correlation IDs, and service registration.
@@ -44,7 +44,7 @@
 
 ## Goals
 
-Woo aims to make the first version of a service easier to assemble without forcing every service into the same architecture. Its main goals are:
+Griffin aims to make the first version of a service easier to assemble without forcing every service into the same architecture. Its main goals are:
 
 - Keep domain and application contracts independent from transport and persistence details.
 - Make vertical slices easy to register, validate, observe, and test.
@@ -54,7 +54,7 @@ Woo aims to make the first version of a service easier to assemble without forci
 
 ## Technology
 
-Woo builds on established .NET libraries rather than replacing them:
+Griffin builds on established .NET libraries rather than replacing them:
 
 | Area | Technologies |
 | --- | --- |
@@ -66,11 +66,11 @@ Woo builds on established .NET libraries rather than replacing them:
 | API tooling | ASP.NET API Versioning, OpenAPI, Swagger UI, Scalar |
 | Testing | xUnit, Testcontainers, Respawn, NSubstitute |
 
-## When to Use Woo
+## When to Use Griffin
 
-Woo is a good fit when several services share the same web and application conventions, especially when a system needs CQRS, PostgreSQL-backed writes, MongoDB read models, event sourcing, durable messaging, or consistent observability.
+Griffin is a good fit when several services share the same web and application conventions, especially when a system needs CQRS, PostgreSQL-backed writes, MongoDB read models, event sourcing, durable messaging, or consistent observability.
 
-It is intentionally not a full application template. A small CRUD API may need only `Woo.Core`, `Woo.Web`, and one persistence module. Avoid referencing the umbrella project when a narrower project reference is enough.
+It is intentionally not a full application template. A small CRUD API may need only `Griffin.Core`, `Griffin.Web`, and one persistence module. Avoid referencing the umbrella project when a narrower project reference is enough.
 
 ## Requirements
 
@@ -80,12 +80,12 @@ It is intentionally not a full application template. A small CRUD API may need o
 
 ## Installation
 
-Each Woo module is published as an independent NuGet package. All modules use the same version from each GitHub release. Install only the packages your service needs:
+Each Griffin module is published as an independent NuGet package. All modules use the same version from each GitHub release. Install only the packages your service needs:
 
 ```bash
-dotnet add package Woo.Core
-dotnet add package Woo.Web
-dotnet add package Woo.EFCore
+dotnet add package Griffin.Core
+dotnet add package Griffin.Web
+dotnet add package Griffin.EFCore
 ```
 
 When a GitHub release is published, the publish workflow pushes every library package to NuGet.org using that release tag's version. The repository requires an Actions secret named `NUGET_API_KEY` containing a NuGet.org API key with package push permissions.
@@ -95,11 +95,11 @@ When a GitHub release is published, the publish workflow pushes every library pa
 The following example shows the usual ASP.NET Core composition. Add only the integrations required by your service.
 
 ```csharp
-using Woo.EFCore;
-using Woo.Jwt;
-using Woo.OpenApi;
-using Woo.ProblemDetails;
-using Woo.Web;
+using Griffin.EFCore;
+using Griffin.Jwt;
+using Griffin.OpenApi;
+using Griffin.ProblemDetails;
+using Griffin.Web;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -130,24 +130,24 @@ app.Run();
 
 | Project | Purpose |
 | --- | --- |
-| `Woo.Core` | Domain, CQRS, events, exceptions, and pagination contracts |
-| `Woo.Web` | Minimal endpoints, API versioning, options, correlation IDs, and web helpers |
-| `Woo.EFCore` | EF Core and PostgreSQL context, migration, seeding, and transaction helpers |
-| `Woo.Mongo` | MongoDB contexts, repositories, and unit-of-work abstractions |
-| `Woo.EventStoreDB` | EventStoreDB configuration, projections, subscriptions, and repositories |
-| `Woo.Wolverine` | Wolverine messaging and application integration |
-| `Woo.Caching` | EasyCaching MediatR behaviors and cache contracts |
-| `Woo.Validation` | FluentValidation MediatR behavior |
-| `Woo.Logging` | Logging behavior for application requests |
-| `Woo.Polly` | Resilience and HTTP client helpers |
-| `Woo.Jwt` | JWT bearer authentication and authorization policies |
-| `Woo.OpenApi` | OpenAPI, Swagger UI, and Scalar setup |
-| `Woo.OpenTelemetryCollector` | Logs, metrics, traces, and diagnostics setup |
-| `Woo.HealthCheck` | Health and liveness endpoint configuration |
-| `Woo.ProblemDetails` | Consistent HTTP exception and status-code responses |
-| `Woo.Mapster` | Mapster registration and assembly scanning |
-| `Woo.TestBase` | Shared test fixtures and integration-test support |
-| `Woo.Utils` | General-purpose shared utilities |
+| `Griffin.Core` | Domain, CQRS, events, exceptions, and pagination contracts |
+| `Griffin.Web` | Minimal endpoints, API versioning, options, correlation IDs, and web helpers |
+| `Griffin.EFCore` | EF Core and PostgreSQL context, migration, seeding, and transaction helpers |
+| `Griffin.Mongo` | MongoDB contexts, repositories, and unit-of-work abstractions |
+| `Griffin.EventStoreDB` | EventStoreDB configuration, projections, subscriptions, and repositories |
+| `Griffin.Wolverine` | Wolverine messaging and application integration |
+| `Griffin.Caching` | EasyCaching MediatR behaviors and cache contracts |
+| `Griffin.Validation` | FluentValidation MediatR behavior |
+| `Griffin.Logging` | Logging behavior for application requests |
+| `Griffin.Polly` | Resilience and HTTP client helpers |
+| `Griffin.Jwt` | JWT bearer authentication and authorization policies |
+| `Griffin.OpenApi` | OpenAPI, Swagger UI, and Scalar setup |
+| `Griffin.OpenTelemetryCollector` | Logs, metrics, traces, and diagnostics setup |
+| `Griffin.HealthCheck` | Health and liveness endpoint configuration |
+| `Griffin.ProblemDetails` | Consistent HTTP exception and status-code responses |
+| `Griffin.Mapster` | Mapster registration and assembly scanning |
+| `Griffin.TestBase` | Shared test fixtures and integration-test support |
+| `Griffin.Utils` | General-purpose shared utilities |
 
 Each library declares the NuGet packages it uses directly. Project references connect library APIs and are kept local to the modules that consume them.
 
@@ -174,11 +174,11 @@ Prefer environment variables or a secret store for credentials in deployed envir
 Restore and build the complete library from the repository root:
 
 ```bash
-dotnet restore woo.slnx
-dotnet build woo.slnx
+dotnet restore griffin.slnx
+dotnet build griffin.slnx
 ```
 
-There is no test project in the solution currently. `Woo.TestBase` provides shared fixtures and Testcontainers support for downstream integration tests.
+There is no test project in the solution currently. `Griffin.TestBase` provides shared fixtures and Testcontainers support for downstream integration tests.
 
 Format changed C# files with the normal .NET formatter when needed:
 
@@ -198,11 +198,11 @@ Thanks a bunch for supporting me!
 
 ## Contribution
 
-Thanks to all [contributors](https://github.com/meysamhadeli/woo/graphs/contributors), you're awesome and this wouldn't be possible without you! The goal is to build a categorized, community-driven collection of very well-known resources.
+Thanks to all [contributors](https://github.com/meysamhadeli/Griffin/graphs/contributors), you're awesome and this wouldn't be possible without you! The goal is to build a categorized, community-driven collection of very well-known resources.
 
 Please follow this [contribution guideline](./CONTRIBUTION.md) to submit a pull request or create the issue.
 
 
 ## License
 
-Woo is available under the [MIT License](LICENSE).
+Griffin is available under the [MIT License](LICENSE).

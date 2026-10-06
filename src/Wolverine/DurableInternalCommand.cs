@@ -1,9 +1,9 @@
 using System.Text.Json;
-using Woo.Core.Event;
-using Woo.Utils;
+using Griffin.Core.Event;
+using Griffin.Utils;
 using MediatR;
 
-namespace Woo.Wolverine;
+namespace Griffin.Wolverine;
 
 public sealed record DurableInternalCommand(string DataType, string Data);
 

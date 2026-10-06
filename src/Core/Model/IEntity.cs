@@ -1,4 +1,4 @@
-namespace Woo.Core.Model;
+namespace Griffin.Core.Model;
 
 public interface IEntity<T> : IEntity
 {

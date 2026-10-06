@@ -1,9 +1,9 @@
 using System.Diagnostics;
 using System.Diagnostics.Metrics;
-using Woo.Core.CQRS;
-using Woo.OpenTelemetryCollector.DiagnosticsProvider;
+using Griffin.Core.CQRS;
+using Griffin.OpenTelemetryCollector.DiagnosticsProvider;
 
-namespace Woo.OpenTelemetryCollector.CoreDiagnostics.Query;
+namespace Griffin.OpenTelemetryCollector.CoreDiagnostics.Query;
 
 public class QueryHandlerMetrics
 {

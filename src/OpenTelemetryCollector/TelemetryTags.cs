@@ -1,4 +1,4 @@
-namespace Woo.OpenTelemetryCollector;
+namespace Griffin.OpenTelemetryCollector;
 
 /// <summary>
 /// Telemetry tags use for adding tags to activities as tag name

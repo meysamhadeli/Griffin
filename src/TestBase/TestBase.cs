@@ -1,10 +1,10 @@
 using System.Net;
 using System.Security.Claims;
-using Woo.Core.Event;
-using Woo.Core.Model;
-using Woo.EFCore;
-using Woo.Mongo;
-using Woo.Web;
+using Griffin.Core.Event;
+using Griffin.Core.Model;
+using Griffin.EFCore;
+using Griffin.Mongo;
+using Griffin.Web;
 using Duende.IdentityServer.EntityFramework.Entities;
 using EasyNetQ.Management.Client;
 using Grpc.Net.Client;
@@ -24,7 +24,7 @@ using WebMotions.Fake.Authentication.JwtBearer;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace Woo.TestBase;
+namespace Griffin.TestBase;
 
 using System.Globalization;
 using Npgsql;

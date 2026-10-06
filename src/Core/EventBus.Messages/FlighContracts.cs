@@ -1,6 +1,6 @@
-using Woo.Core.Event;
+using Griffin.Core.Event;
 
-namespace Woo.Core.EventBus.Messages;
+namespace Griffin.Core.EventBus.Messages;
 
 public record FlightCreated(Guid Id) : IIntegrationEvent;
 public record FlightUpdated(Guid Id) : IIntegrationEvent;

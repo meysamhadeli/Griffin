@@ -46,12 +46,12 @@ jobs:
           echo "PACKAGE_VERSION=$package_version" >> "$GITHUB_ENV"
 
       - name: Restore
-        run: dotnet restore woo.slnx
+        run: dotnet restore griffin.slnx
 
       - name: Build release
-        run: dotnet build woo.slnx --no-restore --configuration Release -p:Version="$PACKAGE_VERSION"
+        run: dotnet build griffin.slnx --no-restore --configuration Release -p:Version="$PACKAGE_VERSION"
 
-      - name: Pack all Woo libraries
+      - name: Pack all Griffin libraries
         shell: bash
         run: |
           mkdir -p artifacts/packages

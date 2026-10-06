@@ -1,5 +1,5 @@
-using Woo.Core.Event;
+using Griffin.Core.Event;
 
-namespace Woo.Core.Contracts.EventBus.Messages;
+namespace Griffin.Core.Contracts.EventBus.Messages;
 
 public record UserCreated(Guid Id, string Name, string PassportNumber) : IIntegrationEvent;

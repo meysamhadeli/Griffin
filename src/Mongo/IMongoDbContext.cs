@@ -1,6 +1,6 @@
 using MongoDB.Driver;
 
-namespace Woo.Mongo;
+namespace Griffin.Mongo;
 
 public interface IMongoDbContext : IDisposable
 {

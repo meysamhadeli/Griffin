@@ -2,7 +2,7 @@ using System.Globalization;
 using System.Text.RegularExpressions;
 using Microsoft.AspNetCore.Routing;
 
-namespace Woo.Web;
+namespace Griffin.Web;
 
 public class SlugifyParameterTransformer : IOutboundParameterTransformer
 {

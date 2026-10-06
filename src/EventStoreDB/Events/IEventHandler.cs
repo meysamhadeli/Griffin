@@ -1,7 +1,7 @@
-using Woo.Core.Event;
+using Griffin.Core.Event;
 using MediatR;
 
-namespace Woo.EventStoreDB.Events;
+namespace Griffin.EventStoreDB.Events;
 
 public interface IEventHandler<in TEvent> : INotificationHandler<TEvent>
     where TEvent : IEvent

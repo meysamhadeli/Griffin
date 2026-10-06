@@ -1,6 +1,6 @@
-using Woo.Core.Exception;
+using Griffin.Core.Exception;
 
-namespace Woo.ProblemDetails;
+namespace Griffin.ProblemDetails;
 
 using Grpc.Core;
 using Microsoft.AspNetCore.Builder;

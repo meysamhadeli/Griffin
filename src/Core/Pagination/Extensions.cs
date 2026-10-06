@@ -1,4 +1,4 @@
-namespace Woo.Core.Pagination;
+namespace Griffin.Core.Pagination;
 
 using Sieve.Models;
 using Sieve.Services;

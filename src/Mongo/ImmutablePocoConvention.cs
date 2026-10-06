@@ -2,7 +2,7 @@ using System.Reflection;
 using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Conventions;
 
-namespace Woo.Mongo
+namespace Griffin.Mongo
 {
     /// <summary>
     /// A convention that map all read only properties for which a matching constructor is found.

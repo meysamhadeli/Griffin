@@ -1,4 +1,4 @@
-namespace Woo.Wolverine;
+namespace Griffin.Wolverine;
 
 public enum TransportType
 {

@@ -1,12 +1,12 @@
-using Woo.EventStoreDB.Events;
-using Woo.EventStoreDB.Projections;
-using Woo.Utils;
+using Griffin.EventStoreDB.Events;
+using Griffin.EventStoreDB.Projections;
+using Griffin.Utils;
 using EventStore.Client;
 using Grpc.Core;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
-namespace Woo.EventStoreDB.Subscriptions;
+namespace Griffin.EventStoreDB.Subscriptions;
 
 public class EventStoreDBSubscriptionToAllOptions
 {

@@ -1,6 +1,6 @@
-using Woo.Core.Event;
+using Griffin.Core.Event;
 
-namespace Woo.Core;
+namespace Griffin.Core;
 
 public record IntegrationEventWrapper<TDomainEventType>(TDomainEventType DomainEvent) : IIntegrationEvent
     where TDomainEventType : IDomainEvent;

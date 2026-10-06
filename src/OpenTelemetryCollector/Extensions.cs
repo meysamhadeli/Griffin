@@ -1,9 +1,9 @@
 using System.Diagnostics;
 using System.Reflection;
-using Woo.OpenTelemetryCollector.CoreDiagnostics.Commands;
-using Woo.OpenTelemetryCollector.CoreDiagnostics.Query;
-using Woo.OpenTelemetryCollector.DiagnosticsProvider;
-using Woo.Web;
+using Griffin.OpenTelemetryCollector.CoreDiagnostics.Commands;
+using Griffin.OpenTelemetryCollector.CoreDiagnostics.Query;
+using Griffin.OpenTelemetryCollector.DiagnosticsProvider;
+using Griffin.Web;
 using Grafana.OpenTelemetry;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http.Features;
@@ -19,7 +19,7 @@ using OpenTelemetry.Metrics;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
 
-namespace Woo.OpenTelemetryCollector;
+namespace Griffin.OpenTelemetryCollector;
 
 // https://learn.microsoft.com/en-us/dotnet/core/diagnostics/observability-otlp-example
 // https://learn.microsoft.com/en-us/dotnet/core/diagnostics/observability-prgrja-example

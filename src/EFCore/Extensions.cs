@@ -1,6 +1,6 @@
 using System.Linq.Expressions;
-using Woo.Core.Model;
-using Woo.Web;
+using Griffin.Core.Model;
+using Griffin.Web;
 using Humanizer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
@@ -11,7 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace Woo.EFCore;
+namespace Griffin.EFCore;
 
 public static class Extensions
 {

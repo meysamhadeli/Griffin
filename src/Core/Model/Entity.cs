@@ -1,4 +1,4 @@
-namespace Woo.Core.Model;
+namespace Griffin.Core.Model;
 
 public abstract record Entity<T> : IEntity<T>
 {

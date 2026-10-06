@@ -1,7 +1,7 @@
-using Woo.Core.Exception;
-using Woo.EventStoreDB.Events;
+using Griffin.Core.Exception;
+using Griffin.EventStoreDB.Events;
 
-namespace Woo.EventStoreDB.Repository;
+namespace Griffin.EventStoreDB.Repository;
 
 public static class RepositoryExtensions
 {

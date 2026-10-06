@@ -1,5 +1,5 @@
 name: Feature request
-description: Propose a focused improvement to a Woo library.
+description: Propose a focused improvement to a Griffin library.
 title: "[Feature]: "
 labels:
   - enhancement
@@ -35,7 +35,7 @@ body:
     attributes:
       label: Scope checks
       options:
-        - label: I checked whether an existing Woo module already owns this concern.
+        - label: I checked whether an existing Griffin module already owns this concern.
           required: true
         - label: I considered direct package and ProjectReference impact.
           required: true

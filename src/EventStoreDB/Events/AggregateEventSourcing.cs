@@ -1,7 +1,7 @@
-using Woo.Core.Event;
-using Woo.Core.Model;
+using Griffin.Core.Event;
+using Griffin.Core.Model;
 
-namespace Woo.EventStoreDB.Events
+namespace Griffin.EventStoreDB.Events
 {
     public abstract record AggregateEventSourcing<TId> : Entity<TId>, IAggregateEventSourcing<TId>
     {

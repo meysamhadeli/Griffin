@@ -1,6 +1,6 @@
 using System.Collections.Concurrent;
 
-namespace Woo.EventStoreDB.Events;
+namespace Griffin.EventStoreDB.Events;
 
 public class StreamNameMapper
 {

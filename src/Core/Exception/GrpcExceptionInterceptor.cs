@@ -1,7 +1,7 @@
 using Grpc.Core;
 using Grpc.Core.Interceptors;
 
-namespace Woo.Core.Exception;
+namespace Griffin.Core.Exception;
 
 public class GrpcExceptionInterceptor : Interceptor
 {

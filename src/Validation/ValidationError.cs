@@ -1,4 +1,4 @@
-namespace Woo.Validation
+namespace Griffin.Validation
 {
     public class ValidationError
     {

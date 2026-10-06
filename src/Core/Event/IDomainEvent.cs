@@ -1,4 +1,4 @@
-namespace Woo.Core.Event;
+namespace Griffin.Core.Event;
 
 public interface IDomainEvent : IEvent
 {

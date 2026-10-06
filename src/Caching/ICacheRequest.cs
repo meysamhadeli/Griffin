@@ -1,4 +1,4 @@
-namespace Woo.Caching;
+namespace Griffin.Caching;
 
 public interface ICacheRequest
 {

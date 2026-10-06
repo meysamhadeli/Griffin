@@ -1,6 +1,6 @@
 using System.Net;
 
-namespace Woo.Core.Exception;
+namespace Griffin.Core.Exception;
 
 public class AppException : CustomException
 {

@@ -1,4 +1,4 @@
-namespace Woo.Mongo;
+namespace Griffin.Mongo;
 
 public interface ITransactionAble
 {

@@ -4,7 +4,7 @@ using System.Net;
 using System.Text.Json;
 using FluentValidation.Results;
 
-namespace Woo.Validation
+namespace Griffin.Validation
 {
     public class ValidationResultModel
     {

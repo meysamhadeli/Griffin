@@ -2,7 +2,7 @@ using System.Reflection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Woo.EventStoreDB;
+namespace Griffin.EventStoreDB;
 
 using Web;
 

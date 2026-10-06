@@ -1,7 +1,7 @@
 using System.Collections.Immutable;
-using Woo.Core.Event;
-using Woo.Core.Model;
-using Woo.Web;
+using Griffin.Core.Event;
+using Griffin.Core.Model;
+using Griffin.Web;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage;
@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Microsoft.Extensions.Logging;
 using IsolationLevel = System.Data.IsolationLevel;
 
-namespace Woo.EFCore;
+namespace Griffin.EFCore;
 
 public abstract class AppDbContextBase : DbContext, IDbContext
 {

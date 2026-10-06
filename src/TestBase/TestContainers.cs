@@ -1,6 +1,6 @@
 using DotNet.Testcontainers.Builders;
 
-namespace Woo.TestBase;
+namespace Griffin.TestBase;
 
 using Testcontainers.EventStoreDb;
 using Testcontainers.MongoDb;

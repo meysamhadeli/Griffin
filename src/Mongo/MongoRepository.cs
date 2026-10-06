@@ -1,9 +1,9 @@
 using System.Linq.Expressions;
-using Woo.Core.Model;
+using Griffin.Core.Model;
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;
 
-namespace Woo.Mongo;
+namespace Griffin.Mongo;
 
 public class MongoRepository<TEntity, TId> : IMongoRepository<TEntity, TId>
     where TEntity : class, IAggregate<TId>

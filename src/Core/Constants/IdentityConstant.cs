@@ -1,4 +1,4 @@
-namespace Woo.Core.Constants;
+namespace Griffin.Core.Constants;
 
 public static class IdentityConstant
 {

@@ -1,6 +1,6 @@
 using Asp.Versioning.Builder;
 
-namespace Woo.Web;
+namespace Griffin.Web;
 
 public class EndpointConfig
 {

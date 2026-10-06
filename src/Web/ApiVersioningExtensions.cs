@@ -1,7 +1,7 @@
 using Asp.Versioning;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Woo.Web;
+namespace Griffin.Web;
 
 public static class ApiVersioningExtensions
 {

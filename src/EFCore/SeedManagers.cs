@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Woo.EFCore;
+namespace Griffin.EFCore;
 
 public class SeedManager(
     ILogger<SeedManager> logger,

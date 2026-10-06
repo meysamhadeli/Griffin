@@ -1,6 +1,6 @@
 using MediatR;
 
-namespace Woo.Core.CQRS;
+namespace Griffin.Core.CQRS;
 
 public interface IQuery<out T> : IRequest<T>
     where T : notnull

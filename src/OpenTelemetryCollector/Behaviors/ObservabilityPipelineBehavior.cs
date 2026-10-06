@@ -1,9 +1,9 @@
-using Woo.Core.CQRS;
-using Woo.OpenTelemetryCollector.CoreDiagnostics.Commands;
-using Woo.OpenTelemetryCollector.CoreDiagnostics.Query;
+using Griffin.Core.CQRS;
+using Griffin.OpenTelemetryCollector.CoreDiagnostics.Commands;
+using Griffin.OpenTelemetryCollector.CoreDiagnostics.Query;
 using MediatR;
 
-namespace Woo.OpenTelemetryCollector.Behaviors;
+namespace Griffin.OpenTelemetryCollector.Behaviors;
 
 public class ObservabilityPipelineBehavior<TRequest, TResponse>(
     CommandHandlerActivity commandActivity,

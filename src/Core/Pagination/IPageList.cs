@@ -1,4 +1,4 @@
-namespace Woo.Core.Pagination;
+namespace Griffin.Core.Pagination;
 
 public interface IPageList<T>
     where T : class

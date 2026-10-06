@@ -1,8 +1,8 @@
-using Woo.EventStoreDB.Events;
-using Woo.EventStoreDB.Serialization;
+using Griffin.EventStoreDB.Events;
+using Griffin.EventStoreDB.Serialization;
 using EventStore.Client;
 
-namespace Woo.EventStoreDB.Repository;
+namespace Griffin.EventStoreDB.Repository;
 
 public interface IEventStoreDBRepository<T> where T : class, IAggregateEventSourcing<Guid>
 {

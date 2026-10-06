@@ -1,9 +1,9 @@
 using System.Text;
-using Woo.EventStoreDB.Events;
+using Griffin.EventStoreDB.Events;
 using EventStore.Client;
 using Newtonsoft.Json;
 
-namespace Woo.EventStoreDB.Serialization;
+namespace Griffin.EventStoreDB.Serialization;
 
 public static class EventStoreDBSerializer
 {

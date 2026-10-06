@@ -1,6 +1,6 @@
 using System.Diagnostics;
 
-namespace Woo.OpenTelemetryCollector;
+namespace Griffin.OpenTelemetryCollector;
 
 public class ActivityInfo
 {

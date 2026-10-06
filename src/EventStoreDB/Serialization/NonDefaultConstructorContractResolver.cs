@@ -1,6 +1,6 @@
 using Newtonsoft.Json.Serialization;
 
-namespace Woo.EventStoreDB.Serialization;
+namespace Griffin.EventStoreDB.Serialization;
 
 public class NonDefaultConstructorContractResolver : DefaultContractResolver
 {

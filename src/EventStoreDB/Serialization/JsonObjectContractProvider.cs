@@ -3,7 +3,7 @@ using System.Reflection;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
-namespace Woo.EventStoreDB.Serialization;
+namespace Griffin.EventStoreDB.Serialization;
 
 public static class JsonObjectContractProvider
 {

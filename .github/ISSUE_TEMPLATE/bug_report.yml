@@ -1,5 +1,5 @@
 name: Bug report
-description: Report a reproducible problem in a Woo library.
+description: Report a reproducible problem in a Griffin library.
 title: "[Bug]: "
 labels:
   - bug

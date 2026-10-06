@@ -1,7 +1,7 @@
 using System.Linq.Expressions;
-using Woo.Core.Model;
+using Griffin.Core.Model;
 
-namespace Woo.Mongo;
+namespace Griffin.Mongo;
 
 public interface IReadRepository<TEntity, in TId>
     where TEntity : class, IAggregate<TId>

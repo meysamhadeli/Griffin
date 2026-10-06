@@ -1,11 +1,11 @@
-using Woo.Core.Constants;
-using Woo.Web;
+using Griffin.Core.Constants;
+using Griffin.Web;
 using Duende.IdentityServer.EntityFramework.Entities;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Woo.Jwt
+namespace Griffin.Jwt
 {
     public static class JwtExtensions
     {

@@ -1,7 +1,7 @@
-using Woo.EventStoreDB.Serialization;
+using Griffin.EventStoreDB.Serialization;
 using EventStore.Client;
 
-namespace Woo.EventStoreDB.Events;
+namespace Griffin.EventStoreDB.Events;
 
 public static class AggregateStreamExtensions
 {

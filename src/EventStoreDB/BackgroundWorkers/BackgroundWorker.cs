@@ -1,7 +1,7 @@
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Woo.EventStoreDB.BackgroundWorkers;
+namespace Griffin.EventStoreDB.BackgroundWorkers;
 
 public class BackgroundWorker : BackgroundService
 {

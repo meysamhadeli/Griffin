@@ -1,15 +1,15 @@
 using System.Security.Claims;
 using System.Text.Json;
-using Woo.Core.Event;
-using Woo.Web;
-using Woo.Wolverine;
+using Griffin.Core.Event;
+using Griffin.Web;
+using Griffin.Wolverine;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using global::Wolverine;
-using MessageEnvelope = Woo.Core.Event.MessageEnvelope;
+using MessageEnvelope = Griffin.Core.Event.MessageEnvelope;
 
-namespace Woo.Core;
+namespace Griffin.Core;
 
 public sealed class EventDispatcher(
     IServiceScopeFactory serviceScopeFactory,

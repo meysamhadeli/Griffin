@@ -1,4 +1,4 @@
-namespace Woo.Core.Exception;
+namespace Griffin.Core.Exception;
 
 public class AggregateNotFoundException : System.Exception
 {

@@ -2,7 +2,7 @@ using EasyCaching.Core;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
-namespace Woo.Caching;
+namespace Griffin.Caching;
 
 public class CachingBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
     where TRequest : notnull, IRequest<TResponse>

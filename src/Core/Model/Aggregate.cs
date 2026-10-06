@@ -1,6 +1,6 @@
-using Woo.Core.Event;
+using Griffin.Core.Event;
 
-namespace Woo.Core.Model;
+namespace Griffin.Core.Model;
 
 public abstract record Aggregate<TId> : Entity<TId>, IAggregate<TId>
 {

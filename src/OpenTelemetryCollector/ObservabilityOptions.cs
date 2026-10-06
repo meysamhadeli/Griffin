@@ -1,4 +1,4 @@
-namespace Woo.OpenTelemetryCollector;
+namespace Griffin.OpenTelemetryCollector;
 
 public class ObservabilityOptions
 {

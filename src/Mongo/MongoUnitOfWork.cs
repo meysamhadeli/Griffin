@@ -1,4 +1,4 @@
-namespace Woo.Mongo;
+namespace Griffin.Mongo;
 
 public class MongoUnitOfWork<TContext> : IMongoUnitOfWork<TContext>, ITransactionAble
     where TContext : MongoDbContext

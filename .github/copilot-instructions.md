@@ -2,7 +2,7 @@
 
 ## Scope
 
-This repository is a .NET 10 library solution. Read the nearest module project file before changing source so package ownership and Woo project dependencies stay local.
+This repository is a .NET 10 library solution. Read the nearest module project file before changing source so package ownership and Griffin project dependencies stay local.
 
 ## Code and Project Conventions
 
@@ -16,8 +16,8 @@ This repository is a .NET 10 library solution. Read the nearest module project f
 ## Validation
 
 ```bash
-dotnet restore woo.slnx
-dotnet build woo.slnx --no-restore
+dotnet restore griffin.slnx
+dotnet build griffin.slnx --no-restore
 ```
 
 No test project is currently present. `src/TestBase` contains reusable fixtures for downstream integration tests; do not claim local test coverage unless a test project is added.
@@ -34,7 +34,7 @@ No test project is currently present. `src/TestBase` contains reusable fixtures 
 
 | Change | Also inspect or update |
 |---|---|
-| Add/remove Woo module | `woo.slnx`, module `.csproj`, `README.md`, `docs/how-it-works.md`, `CHANGELOG.md` |
+| Add/remove Griffin module | `griffin.slnx`, module `.csproj`, `README.md`, `docs/how-it-works.md`, `CHANGELOG.md` |
 | Add a package or provider API | Consuming module `.csproj`, `Directory.Build.props` if build-wide, full solution build |
 | Change a public event, CQRS contract, exception, or model | `src/Core`, consuming adapters, `README.md`, `docs/how-it-works.md` |
 | Change ASP.NET registration | `src/Web`, affected module `Extensions.cs`, `README.md` |

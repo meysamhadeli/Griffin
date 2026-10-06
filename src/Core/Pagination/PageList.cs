@@ -1,4 +1,4 @@
-namespace Woo.Core.Pagination;
+namespace Griffin.Core.Pagination;
 
 public record PageList<T>(IReadOnlyList<T> Items, int PageNumber, int PageSize, int TotalCount) : IPageList<T>
     where T : class

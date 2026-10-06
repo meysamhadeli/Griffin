@@ -3,7 +3,7 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Woo.Web;
+namespace Griffin.Web;
 
 using MapsterMapper;
 

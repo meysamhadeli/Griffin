@@ -1,11 +1,11 @@
 using System.Reflection;
-using Woo.Utils;
+using Griffin.Utils;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using Scrutor;
 
-namespace Woo.Web;
+namespace Griffin.Web;
 
 public static class MinimalApiExtensions
 {

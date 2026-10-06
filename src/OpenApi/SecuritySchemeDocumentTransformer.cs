@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.OpenApi;
 using Microsoft.OpenApi;
 
-namespace Woo.OpenApi;
+namespace Griffin.OpenApi;
 
 public class SecuritySchemeDocumentTransformer : IOpenApiDocumentTransformer
 {

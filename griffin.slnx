@@ -1,0 +1,57 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Caching/">
+    <Project Path="src/Caching/Griffin.Caching.csproj" />
+  </Folder>
+  <Folder Name="/src/Core/">
+    <Project Path="src/Core/Griffin.Core.csproj" />
+  </Folder>
+  <Folder Name="/src/EFCore/">
+    <Project Path="src/EFCore/Griffin.EFCore.csproj" />
+  </Folder>
+  <Folder Name="/src/EventStoreDB/">
+    <Project Path="src/EventStoreDB/Griffin.EventStoreDB.csproj" />
+  </Folder>
+  <Folder Name="/src/HealthCheck/">
+    <Project Path="src/HealthCheck/Griffin.HealthCheck.csproj" />
+  </Folder>
+  <Folder Name="/src/Jwt/">
+    <Project Path="src/Jwt/Griffin.Jwt.csproj" />
+  </Folder>
+  <Folder Name="/src/Logging/">
+    <Project Path="src/Logging/Griffin.Logging.csproj" />
+  </Folder>
+  <Folder Name="/src/Mapster/">
+    <Project Path="src/Mapster/Griffin.Mapster.csproj" />
+  </Folder>
+  <Folder Name="/src/Mongo/">
+    <Project Path="src/Mongo/Griffin.Mongo.csproj" />
+  </Folder>
+  <Folder Name="/src/OpenApi/">
+    <Project Path="src/OpenApi/Griffin.OpenApi.csproj" />
+  </Folder>
+  <Folder Name="/src/OpenTelemetryCollector/">
+    <Project Path="src/OpenTelemetryCollector/Griffin.OpenTelemetryCollector.csproj" />
+  </Folder>
+  <Folder Name="/src/Polly/">
+    <Project Path="src/Polly/Griffin.Polly.csproj" />
+  </Folder>
+  <Folder Name="/src/ProblemDetails/">
+    <Project Path="src/ProblemDetails/Griffin.ProblemDetails.csproj" />
+  </Folder>
+  <Folder Name="/src/TestBase/">
+    <Project Path="src/TestBase/Griffin.TestBase.csproj" />
+  </Folder>
+  <Folder Name="/src/Utils/">
+    <Project Path="src/Utils/Griffin.Utils.csproj" />
+  </Folder>
+  <Folder Name="/src/Validation/">
+    <Project Path="src/Validation/Griffin.Validation.csproj" />
+  </Folder>
+  <Folder Name="/src/Web/">
+    <Project Path="src/Web/Griffin.Web.csproj" />
+  </Folder>
+  <Folder Name="/src/Wolverine/">
+    <Project Path="src/Wolverine/Griffin.Wolverine.csproj" />
+  </Folder>
+</Solution>

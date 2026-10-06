@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Routing;
 
-namespace Woo.Web;
+namespace Griffin.Web;
 
 public interface IMinimalEndpoint
 {

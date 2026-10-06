@@ -1,11 +1,11 @@
 using System.Text.Json;
 using System.Transactions;
-using Woo.Core;
-using Woo.Polly;
+using Griffin.Core;
+using Griffin.Polly;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
-namespace Woo.EFCore;
+namespace Griffin.EFCore;
 
 
 public class EfTxBehavior<TRequest, TResponse>(

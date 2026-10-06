@@ -2,7 +2,7 @@ using System.Text;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace Woo.EventStoreDB.Serialization;
+namespace Griffin.EventStoreDB.Serialization;
 
 public static class SerializationExtensions
 {

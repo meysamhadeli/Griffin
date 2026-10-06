@@ -1,7 +1,7 @@
 using System.Globalization;
 using System.Net;
 
-namespace Woo.Core.Exception
+namespace Griffin.Core.Exception
 {
     public class InternalServerException : CustomException
     {

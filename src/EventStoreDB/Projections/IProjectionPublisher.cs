@@ -1,7 +1,7 @@
-using Woo.EventStoreDB.Events;
+using Griffin.EventStoreDB.Events;
 using MediatR;
 
-namespace Woo.EventStoreDB.Projections;
+namespace Griffin.EventStoreDB.Projections;
 
 public interface IProjectionPublisher
 {

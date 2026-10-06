@@ -1,6 +1,6 @@
-using Woo.Core.Event;
+using Griffin.Core.Event;
 
-namespace Woo.EventStoreDB.Events;
+namespace Griffin.EventStoreDB.Events;
 
 public record EventMetadata(
     ulong StreamRevision,

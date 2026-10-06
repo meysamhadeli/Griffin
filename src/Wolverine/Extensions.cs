@@ -1,6 +1,6 @@
 using System.Reflection;
-using Woo.Core.Exception;
-using Woo.Web;
+using Griffin.Core.Exception;
+using Griffin.Web;
 using Humanizer;
 using JasperFx.CodeGeneration.Model;
 using Microsoft.AspNetCore.Builder;
@@ -14,7 +14,7 @@ using global::Wolverine.ErrorHandling;
 using global::Wolverine.Postgresql;
 using global::Wolverine.RabbitMQ;
 
-namespace Woo.Wolverine;
+namespace Griffin.Wolverine;
 
 public static class Extensions
 {

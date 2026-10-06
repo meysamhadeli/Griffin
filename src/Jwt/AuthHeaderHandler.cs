@@ -1,7 +1,7 @@
 using System.Net.Http.Headers;
 using Microsoft.AspNetCore.Http;
 
-namespace Woo.Jwt;
+namespace Griffin.Jwt;
 
 public class AuthHeaderHandler : DelegatingHandler
 {

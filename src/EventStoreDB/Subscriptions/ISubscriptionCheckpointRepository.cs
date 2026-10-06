@@ -1,4 +1,4 @@
-namespace Woo.EventStoreDB.Subscriptions;
+namespace Griffin.EventStoreDB.Subscriptions;
 
 public interface ISubscriptionCheckpointRepository
 {

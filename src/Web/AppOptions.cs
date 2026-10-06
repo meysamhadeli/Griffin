@@ -1,4 +1,4 @@
-namespace Woo.Web;
+namespace Griffin.Web;
 
 public class AppOptions
 {

@@ -3,7 +3,7 @@ using System.Diagnostics.Metrics;
 using System.Reflection;
 using Microsoft.Extensions.Options;
 
-namespace Woo.OpenTelemetryCollector.DiagnosticsProvider;
+namespace Griffin.OpenTelemetryCollector.DiagnosticsProvider;
 
 public class CustomeDiagnosticsProvider(IMeterFactory meterFactory, IOptions<ObservabilityOptions> options)
     : IDiagnosticsProvider

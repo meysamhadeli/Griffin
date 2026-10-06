@@ -1,8 +1,8 @@
 using System.Diagnostics;
-using Woo.Core.CQRS;
-using Woo.OpenTelemetryCollector.DiagnosticsProvider;
+using Griffin.Core.CQRS;
+using Griffin.OpenTelemetryCollector.DiagnosticsProvider;
 
-namespace Woo.OpenTelemetryCollector.CoreDiagnostics.Commands;
+namespace Griffin.OpenTelemetryCollector.CoreDiagnostics.Commands;
 
 public class CommandHandlerActivity(IDiagnosticsProvider diagnosticsProvider)
 {

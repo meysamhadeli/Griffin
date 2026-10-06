@@ -1,9 +1,9 @@
-using Woo.Core.Event;
-using Woo.EventStoreDB.Events;
-using Woo.EventStoreDB.Serialization;
+using Griffin.Core.Event;
+using Griffin.EventStoreDB.Events;
+using Griffin.EventStoreDB.Serialization;
 using EventStore.Client;
 
-namespace Woo.EventStoreDB.Subscriptions;
+namespace Griffin.EventStoreDB.Subscriptions;
 
 public record CheckpointStored(string SubscriptionId, ulong? Position, DateTime CheckpointedAt) : IEvent;
 

@@ -1,7 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using NSubstitute;
 
-namespace Woo.Web;
+namespace Griffin.Web;
 
 public static class ServiceCollectionExtensions
 {

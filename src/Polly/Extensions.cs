@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Logging;
 
-namespace Woo.Polly;
+namespace Griffin.Polly;
 
 using global::Polly;
 using Exception = System.Exception;

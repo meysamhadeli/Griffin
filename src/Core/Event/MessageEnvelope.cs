@@ -1,6 +1,6 @@
 using Google.Protobuf;
 
-namespace Woo.Core.Event;
+namespace Griffin.Core.Event;
 
 public class MessageEnvelope
 {

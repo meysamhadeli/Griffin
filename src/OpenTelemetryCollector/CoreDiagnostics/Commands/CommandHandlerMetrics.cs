@@ -1,10 +1,10 @@
 using System.Diagnostics;
 using System.Diagnostics.Metrics;
-using Woo.Core.CQRS;
-using Woo.OpenTelemetryCollector;
-using Woo.OpenTelemetryCollector.DiagnosticsProvider;
+using Griffin.Core.CQRS;
+using Griffin.OpenTelemetryCollector;
+using Griffin.OpenTelemetryCollector.DiagnosticsProvider;
 
-namespace Woo.OpenTelemetryCollector.CoreDiagnostics.Commands;
+namespace Griffin.OpenTelemetryCollector.CoreDiagnostics.Commands;
 
 public class CommandHandlerMetrics
 {

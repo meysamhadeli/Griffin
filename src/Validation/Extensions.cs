@@ -1,7 +1,7 @@
 using FluentValidation;
-using ValidationException = Woo.Core.Exception.ValidationException;
+using ValidationException = Griffin.Core.Exception.ValidationException;
 
-namespace Woo.Validation
+namespace Griffin.Validation
 {
     public static class Extensions
     {

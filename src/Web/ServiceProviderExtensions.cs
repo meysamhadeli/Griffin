@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Hosting;
 
-namespace Woo.Web;
+namespace Griffin.Web;
 
 public static class ServiceProviderExtensions
 {

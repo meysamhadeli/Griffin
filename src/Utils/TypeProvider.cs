@@ -2,7 +2,7 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using Microsoft.AspNetCore.Mvc.ApplicationParts;
 
-namespace Woo.Utils;
+namespace Griffin.Utils;
 
 public static class TypeProvider
 {

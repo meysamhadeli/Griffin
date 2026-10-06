@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Scalar.AspNetCore;
 
-namespace Woo.OpenApi
+namespace Griffin.OpenApi
 {
     public static class Extensions
     {

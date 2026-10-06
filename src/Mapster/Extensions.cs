@@ -3,7 +3,7 @@ using Mapster;
 using MapsterMapper;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Woo.Mapster;
+namespace Griffin.Mapster;
 
 public static class Extensions
 {

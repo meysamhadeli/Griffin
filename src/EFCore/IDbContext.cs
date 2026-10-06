@@ -1,7 +1,7 @@
-using Woo.Core.Event;
+using Griffin.Core.Event;
 using Microsoft.EntityFrameworkCore;
 
-namespace Woo.EFCore;
+namespace Griffin.EFCore;
 
 using Microsoft.EntityFrameworkCore.Storage;
 

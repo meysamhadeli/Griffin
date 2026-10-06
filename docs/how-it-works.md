@@ -1,12 +1,12 @@
 # How It Works
 
-Woo is a collection of independently consumable .NET class libraries. `woo.slnx` contains the modules under `src/`; there is no application host in this repository.
+Griffin is a collection of independently consumable .NET class libraries. `griffin.slnx` contains the modules under `src/`; there is no application host in this repository.
 
 ## Dependency Direction
 
 `Core` contains shared contracts and domain primitives. `Web` contains ASP.NET Core integration and is consumed by infrastructure modules that need web registration. Persistence and operational adapters keep their provider-specific packages in their own project files. Cross-cutting modules such as `Caching`, `Validation`, `Logging`, `Polly`, and `Wolverine` expose focused registration or pipeline behavior.
 
-Every project declares the NuGet packages used by its own source. A Woo `ProjectReference` is reserved for source APIs from another Woo module; packages are not inherited through a dependency bucket.
+Every project declares the NuGet packages used by its own source. A Griffin `ProjectReference` is reserved for source APIs from another Griffin module; packages are not inherited through a dependency bucket.
 
 ## Registration Flow
 
@@ -22,8 +22,8 @@ Consumer applications typically register the relevant module extensions from `sr
 The canonical validation command is:
 
 ```bash
-dotnet restore woo.slnx
-dotnet build woo.slnx --no-restore
+dotnet restore griffin.slnx
+dotnet build griffin.slnx --no-restore
 ```
 
 `src/TestBase` supplies fixtures and Testcontainers dependencies for downstream integration tests. The repository currently has no test project of its own.

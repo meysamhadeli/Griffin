@@ -1,4 +1,4 @@
-namespace Woo.EFCore
+namespace Griffin.EFCore
 {
     public interface IDataSeeder
     {

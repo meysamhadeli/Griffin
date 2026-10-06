@@ -1,10 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup><TargetFramework>net10.0</TargetFramework><PackageId>CodeDev.Woo.TestBase</PackageId><RootNamespace>Woo.TestBase</RootNamespace><AssemblyName>Woo.TestBase</AssemblyName><IsPackable>true</IsPackable></PropertyGroup>
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework><PackageId>Griffin.TestBase</PackageId><RootNamespace>Griffin.TestBase</RootNamespace><AssemblyName>Griffin.TestBase</AssemblyName><IsPackable>true</IsPackable></PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Core\Woo.Core.csproj" />
-    <ProjectReference Include="..\EFCore\Woo.EFCore.csproj" />
-    <ProjectReference Include="..\Mongo\Woo.Mongo.csproj" />
-    <ProjectReference Include="..\Web\Woo.Web.csproj" />
+    <ProjectReference Include="..\Core\Griffin.Core.csproj" />
+    <ProjectReference Include="..\EFCore\Griffin.EFCore.csproj" />
+    <ProjectReference Include="..\Mongo\Griffin.Mongo.csproj" />
+    <ProjectReference Include="..\Web\Griffin.Web.csproj" />
     <PackageReference Include="Duende.IdentityServer.EntityFramework" Version="7.4.5" />
     <PackageReference Include="EasyNetQ.Management.Client" Version="3.0.1" />
     <PackageReference Include="Grpc.Net.Client" Version="2.76.0" />

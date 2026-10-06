@@ -1,4 +1,4 @@
-namespace Woo.HealthCheck;
+namespace Griffin.HealthCheck;
 
 public class HealthOptions
 {

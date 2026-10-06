@@ -1,8 +1,8 @@
-using Woo.EFCore;
-using Woo.EventStoreDB;
-using Woo.Wolverine;
-using Woo.Mongo;
-using Woo.Web;
+using Griffin.EFCore;
+using Griffin.EventStoreDB;
+using Griffin.Wolverine;
+using Griffin.Mongo;
+using Griffin.Web;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.Extensions.DependencyInjection;
@@ -11,7 +11,7 @@ using Microsoft.Extensions.Hosting;
 using MongoDB.Driver;
 using RabbitMQ.Client;
 
-namespace Woo.HealthCheck;
+namespace Griffin.HealthCheck;
 
 public static class Extensions
 {

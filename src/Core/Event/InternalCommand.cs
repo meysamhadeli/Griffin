@@ -1,5 +1,5 @@
-using Woo.Core.CQRS;
+using Griffin.Core.CQRS;
 
-namespace Woo.Core.Event;
+namespace Griffin.Core.Event;
 
 public record InternalCommand : IInternalCommand, ICommand;

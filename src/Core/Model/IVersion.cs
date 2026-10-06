@@ -1,4 +1,4 @@
-namespace Woo.Core.Model;
+namespace Griffin.Core.Model;
 
 // For handling optimistic concurrency
 public interface IVersion

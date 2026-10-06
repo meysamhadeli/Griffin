@@ -1,4 +1,4 @@
-namespace Woo.Utils;
+namespace Griffin.Utils;
 
 public static class NoSynchronizationContextScope
 {

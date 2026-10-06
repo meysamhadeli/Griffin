@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup><TargetFramework>net10.0</TargetFramework><PackageId>CodeDev.Woo.Web</PackageId><RootNamespace>Woo.Web</RootNamespace><AssemblyName>Woo.Web</AssemblyName></PropertyGroup>
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework><PackageId>Griffin.Web</PackageId><RootNamespace>Griffin.Web</RootNamespace><AssemblyName>Griffin.Web</AssemblyName></PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Utils\Woo.Utils.csproj" />
+    <ProjectReference Include="..\Utils\Griffin.Utils.csproj" />
     <PackageReference Include="Asp.Versioning.Http" Version="8.1.1" />
     <PackageReference Include="Asp.Versioning.Mvc" Version="8.1.1" />
     <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.1.1" />

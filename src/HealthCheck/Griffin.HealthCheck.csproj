@@ -1,11 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup><TargetFramework>net10.0</TargetFramework><PackageId>CodeDev.Woo.HealthCheck</PackageId><RootNamespace>Woo.HealthCheck</RootNamespace><AssemblyName>Woo.HealthCheck</AssemblyName></PropertyGroup>
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework><PackageId>Griffin.HealthCheck</PackageId><RootNamespace>Griffin.HealthCheck</RootNamespace><AssemblyName>Griffin.HealthCheck</AssemblyName></PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EFCore\Woo.EFCore.csproj" />
-    <ProjectReference Include="..\EventStoreDB\Woo.EventStoreDB.csproj" />
-    <ProjectReference Include="..\Mongo\Woo.Mongo.csproj" />
-    <ProjectReference Include="..\Web\Woo.Web.csproj" />
-    <ProjectReference Include="..\Wolverine\Woo.Wolverine.csproj" />
+    <ProjectReference Include="..\EFCore\Griffin.EFCore.csproj" />
+    <ProjectReference Include="..\EventStoreDB\Griffin.EventStoreDB.csproj" />
+    <ProjectReference Include="..\Mongo\Griffin.Mongo.csproj" />
+    <ProjectReference Include="..\Web\Griffin.Web.csproj" />
+    <ProjectReference Include="..\Wolverine\Griffin.Wolverine.csproj" />
     <PackageReference Include="AspNetCore.HealthChecks.EventStore" Version="9.0.0" />
     <PackageReference Include="AspNetCore.HealthChecks.MongoDb" Version="9.0.0" />
     <PackageReference Include="AspNetCore.HealthChecks.NpgSql" Version="9.0.0" />

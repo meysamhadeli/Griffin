@@ -1,6 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Woo.Utils;
+namespace Griffin.Utils;
 
 //ref: https://dotnetcoretutorials.com/2018/05/06/servicelocator-shim-for-net-core/
 public class ServiceLocator

@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Configuration;
 
-namespace Woo.Web
+namespace Griffin.Web
 {
     public static class ConfigurationHelper
     {

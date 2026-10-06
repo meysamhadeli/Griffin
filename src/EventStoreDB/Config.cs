@@ -1,14 +1,14 @@
 using System.Reflection;
-using Woo.EventStoreDB.BackgroundWorkers;
-using Woo.EventStoreDB.Projections;
-using Woo.EventStoreDB.Repository;
-using Woo.EventStoreDB.Subscriptions;
+using Griffin.EventStoreDB.BackgroundWorkers;
+using Griffin.EventStoreDB.Projections;
+using Griffin.EventStoreDB.Repository;
+using Griffin.EventStoreDB.Subscriptions;
 using EventStore.Client;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace Woo.EventStoreDB;
+namespace Griffin.EventStoreDB;
 
 using Web;
 

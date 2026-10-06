@@ -1,7 +1,7 @@
 using System.Collections.Concurrent;
-using Woo.Utils;
+using Griffin.Utils;
 
-namespace Woo.EventStoreDB.Events;
+namespace Griffin.EventStoreDB.Events;
 
 public class EventTypeMapper
 {

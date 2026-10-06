@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Woo.Core.Exception;
+namespace Griffin.Core.Exception;
 
 using ProblemDetails = Microsoft.AspNetCore.Mvc.ProblemDetails;
 

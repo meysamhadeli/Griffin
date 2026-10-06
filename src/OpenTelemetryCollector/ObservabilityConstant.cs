@@ -1,4 +1,4 @@
-namespace Woo.OpenTelemetryCollector;
+namespace Griffin.OpenTelemetryCollector;
 
 public static class ObservabilityConstant
 {

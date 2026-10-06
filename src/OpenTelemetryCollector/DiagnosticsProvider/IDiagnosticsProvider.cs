@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using System.Diagnostics.Metrics;
 
-namespace Woo.OpenTelemetryCollector.DiagnosticsProvider;
+namespace Griffin.OpenTelemetryCollector.DiagnosticsProvider;
 
 public interface IDiagnosticsProvider : IDisposable
 {

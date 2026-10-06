@@ -1,6 +1,6 @@
 using System.Collections.Concurrent;
 
-namespace Woo.EventStoreDB.Subscriptions;
+namespace Griffin.EventStoreDB.Subscriptions;
 
 public class InMemorySubscriptionCheckpointRepository : ISubscriptionCheckpointRepository
 {

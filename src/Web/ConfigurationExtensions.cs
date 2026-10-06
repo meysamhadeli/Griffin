@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Woo.Web;
+namespace Griffin.Web;
 
 using Microsoft.Extensions.Options;
 
