@@ -86,9 +86,17 @@ jobs:
             echo "::error::No NuGet packages were produced."
             exit 1
           fi
+          failed=0
           for package in "${packages[@]}"; do
-            dotnet nuget push "$package" \
+            if ! dotnet nuget push "$package" \
               --api-key "$NUGET_API_KEY" \
               --source https://api.nuget.org/v3/index.json \
-              --skip-duplicate
+              --skip-duplicate; then
+              echo "::warning::Failed to push $(basename "$package")."
+              failed=1
+            fi
           done
+          if [[ "$failed" -ne 0 ]]; then
+            echo "::error::One or more packages failed to push."
+            exit 1
+          fi

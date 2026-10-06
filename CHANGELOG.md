@@ -24,5 +24,6 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- Renamed the `Griffin.Logging` package, namespace, and assembly to `Griffin.Log` (`src/Logging` moved to `src/Log`); the `Griffin.Logging` ID was already owned by another publisher on NuGet.org.
 - Each Griffin class library owns its direct NuGet dependencies; the former shared dependency project was removed.
 - Added repository guidance, CI, Copilot setup, issue templates, and architecture documentation.

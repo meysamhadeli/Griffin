@@ -18,8 +18,8 @@
   <Folder Name="/src/Jwt/">
     <Project Path="src/Jwt/Griffin.Jwt.csproj" />
   </Folder>
-  <Folder Name="/src/Logging/">
-    <Project Path="src/Logging/Griffin.Logging.csproj" />
+  <Folder Name="/src/Log/">
+    <Project Path="src/Log/Griffin.Log.csproj" />
   </Folder>
   <Folder Name="/src/Mapster/">
     <Project Path="src/Mapster/Griffin.Mapster.csproj" />

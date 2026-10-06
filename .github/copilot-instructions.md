@@ -27,7 +27,7 @@ No test project is currently present. `src/TestBase` contains reusable fixtures 
 - `src/Core` owns events, CQRS contracts, exceptions, and shared models.
 - `src/Web` owns ASP.NET Core registration and web-facing helpers.
 - Persistence adapters own their provider packages and registration extensions.
-- `src/Wolverine`, `src/Caching`, `src/Validation`, and `src/Logging` expose cross-cutting pipeline behavior.
+- `src/Wolverine`, `src/Caching`, `src/Validation`, and `src/Log` expose cross-cutting pipeline behavior.
 - `src/OpenApi`, `src/OpenTelemetryCollector`, and `src/HealthCheck` own observability and operational registrations.
 
 ## Maintenance Matrix

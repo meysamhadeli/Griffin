@@ -11,7 +11,7 @@ Target framework and package versions are defined in the project files and `Dire
 - `src/Core`: domain contracts, CQRS, events, exceptions, and pagination.
 - `src/Web`: ASP.NET Core helpers, API versioning, options, and service registration.
 - `src/EFCore`, `src/Mongo`, `src/EventStoreDB`: persistence integrations.
-- `src/Wolverine`, `src/Caching`, `src/Validation`, `src/Logging`, `src/Polly`: cross-cutting behaviors and messaging.
+- `src/Wolverine`, `src/Caching`, `src/Validation`, `src/Log`, `src/Polly`: cross-cutting behaviors and messaging.
 - `src/Jwt`, `src/OpenApi`, `src/OpenTelemetryCollector`, `src/HealthCheck`, `src/ProblemDetails`, `src/Mapster`, `src/Utils`: integration modules.
 - `src/TestBase`: reusable integration-test fixtures and Testcontainers support.
 - `assets`: repository assets.

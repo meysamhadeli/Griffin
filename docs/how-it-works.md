@@ -14,7 +14,7 @@ Consumer applications typically register the relevant module extensions from `sr
 
 - Web concerns begin in `src/Web`.
 - EF Core, MongoDB, and EventStoreDB concerns begin in their provider modules.
-- Messaging and request pipeline concerns begin in `src/Wolverine`, `src/Caching`, `src/Validation`, and `src/Logging`.
+- Messaging and request pipeline concerns begin in `src/Wolverine`, `src/Caching`, `src/Validation`, and `src/Log`.
 - OpenAPI, health, JWT, problem-details, and telemetry setup live in their named modules.
 
 ## Build Boundary

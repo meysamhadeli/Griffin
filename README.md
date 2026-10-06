@@ -138,7 +138,7 @@ app.Run();
 | `Griffin.Wolverine` | Wolverine messaging and application integration |
 | `Griffin.Caching` | EasyCaching MediatR behaviors and cache contracts |
 | `Griffin.Validation` | FluentValidation MediatR behavior |
-| `Griffin.Logging` | Logging behavior for application requests |
+| `Griffin.Log` | Logging behavior for application requests |
 | `Griffin.Polly` | Resilience and HTTP client helpers |
 | `Griffin.Jwt` | JWT bearer authentication and authorization policies |
 | `Griffin.OpenApi` | OpenAPI, Swagger UI, and Scalar setup |
