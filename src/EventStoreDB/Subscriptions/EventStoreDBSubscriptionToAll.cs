@@ -127,6 +127,10 @@ public class EventStoreDBSubscriptionToAll
         if (exception is RpcException { StatusCode: StatusCode.Cancelled })
             return;
 
+        // The host is shutting down, there is nothing to resubscribe to anymore.
+        if (cancellationToken.IsCancellationRequested)
+            return;
+
         Resubscribe();
     }
 
@@ -134,7 +138,11 @@ public class EventStoreDBSubscriptionToAll
     {
         // You may consider adding a max resubscribe count if you want to fail process
         // instead of retrying until database is up
-        while (true)
+        //
+        // NOTE: the loop must also stop when the host shuts down, otherwise `Wait(cancellationToken)`
+        // throws on every iteration, the exception is logged and the loop retries forever, flooding
+        // the logs during shutdown instead of letting the process exit.
+        while (!cancellationToken.IsCancellationRequested)
         {
             var resubscribed = false;
             try
@@ -150,6 +158,12 @@ public class EventStoreDBSubscriptionToAll
                 }
 
                 resubscribed = true;
+            }
+            catch (OperationCanceledException) when (cancellationToken.IsCancellationRequested)
+            {
+                // Expected during host shutdown - not a resubscribe failure, so do not log it
+                // as a warning and do not loop again.
+                break;
             }
             catch (System.Exception exception)
             {
@@ -167,7 +181,9 @@ public class EventStoreDBSubscriptionToAll
 
             // Sleep between reconnections to not flood the database or not kill the CPU with infinite loop
             // Randomness added to reduce the chance of multiple subscriptions trying to reconnect at the same time
-            Thread.Sleep(1000 + new Random((int)DateTime.UtcNow.Ticks).Next(1000));
+            // Use the cancellation token so host shutdown is not delayed by the backoff sleep.
+            if (cancellationToken.WaitHandle.WaitOne(1000 + new Random((int)DateTime.UtcNow.Ticks).Next(1000)))
+                break;
         }
     }
 
