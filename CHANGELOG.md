@@ -20,6 +20,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- Nextra live documentation with search, a prominent README link, and automated GitHub Pages deployment.
+- Per-module documentation guides under `docs/modules/` covering installation, registration, configuration, and usage for every Griffin package.
 - Automatically publish every Griffin class library to NuGet.org with the shared version when a GitHub release is published.
 
 ### Changed

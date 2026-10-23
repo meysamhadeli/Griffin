@@ -4,6 +4,8 @@
 
 <h1 align="center">Griffin</h1>
 
+<p align="center"><a href="https://meysamhadeli.github.io/Griffin/"><strong>Live Documentation</strong></a></p>
+
 <p align="center">Reusable .NET building blocks for production-ready web services.</p>
 
 <p align="center">Griffin provides composable infrastructure for ASP.NET Core, CQRS, domain-driven design, event-driven messaging, persistence, testing, and observability.</p>
@@ -170,6 +172,24 @@ Options are bound by type name in the standard .NET configuration system. A typi
 Prefer environment variables or a secret store for credentials in deployed environments. Do not commit connection strings, signing keys, or broker credentials.
 
 ## Development
+
+### Documentation
+
+The [live documentation](https://meysamhadeli.github.io/Griffin/) uses Nextra and GitHub Pages. Its pages are generated from this README, `docs/how-it-works.md`, `CONTRIBUTION.md`, and the per-module guides under `docs/modules/` before every build. Each Griffin package has its own guide covering installation, registration, configuration, and usage.
+
+To preview locally with Node.js 22 or newer:
+
+```bash
+cd docs/site
+npm ci
+npm run dev
+```
+
+Open `http://localhost:3000`. Run `npm run build` to export the static site and Pagefind search index to `docs/site/out`. Restart the dev server after editing source Markdown to regenerate pages. Search requires a production build served over HTTP; it is not indexed by the dev server.
+
+For first deployment, select **Settings > Pages > Build and deployment > Source > GitHub Actions** in the GitHub repository. The Documentation workflow validates pull requests and deploys updates from `main`; it can also be run manually. The live URL becomes available after the first successful deployment.
+
+### Library Build
 
 Restore and build the complete library from the repository root:
 

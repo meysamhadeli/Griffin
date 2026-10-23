@@ -50,6 +50,8 @@ There are currently no test project files in the solution. Do not add a `dotnet 
 
 ## CI/CD
 
+`.github/workflows/docs.yml` builds the Nextra site under `docs/site` on documentation pull requests and deploys `main` to GitHub Pages. Node.js 22 or newer is required. Run `npm ci` and `npm run build` from `docs/site` to validate documentation. Generated MDX pages come from `README.md`, `docs/how-it-works.md`, `CONTRIBUTION.md`, and per-module guides under `docs/modules/`; edit those sources, not generated files. When a module's public API or registration changes, update its guide in `docs/modules/`. GitHub Pages must use **GitHub Actions** as its deployment source. Zod is pinned for Nextra 4's layout validation compatibility; verify a full static build before changing this override.
+
 `.github/workflows/ci.yml` restores, builds, and tests on pushes and pull requests. `.github/workflows/publish.yml` runs when a GitHub release is published, packs every `src` class library at the release tag's shared version, and pushes packages to NuGet.org. Configure the repository Actions secret `NUGET_API_KEY` with a NuGet.org key that can push all Griffin package IDs. `.github/workflows/copilot-setup-steps.yml` prepares the .NET build environment for coding agents.
 
 ## Documentation Status
