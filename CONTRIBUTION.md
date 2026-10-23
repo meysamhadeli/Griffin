@@ -16,6 +16,12 @@ Pull requests should have a title that follows the specification, otherwise, mer
 - Use the `major` PR label for breaking changes.
 - Publishing a GitHub release triggers the NuGet package workflow. A manual workflow dispatch is also available when a version and source ref are specified.
 
+## Documentation
+
+The Nextra site lives in `docs/site`. Edit `README.md`, `docs/how-it-works.md`, or this file rather than generated MDX pages. With Node.js 22 or newer, run `npm ci` and `npm run dev` from `docs/site` for a local preview. Run `npm run build` to validate the static export and search index. Search is indexed during production builds, not by the development server.
+
+The Documentation workflow builds pull requests and publishes `main` to GitHub Pages. Repository maintainers must select **GitHub Actions** as the Pages source before the first deployment.
+
 ## Resources
 
 - [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)

@@ -1,0 +1,21 @@
+export default {
+  index: 'Overview',
+  core: 'Core',
+  web: 'Web',
+  efcore: 'EF Core',
+  mongo: 'MongoDB',
+  eventstoredb: 'EventStoreDB',
+  wolverine: 'Wolverine',
+  caching: 'Caching',
+  validation: 'Validation',
+  log: 'Logging',
+  polly: 'Polly',
+  jwt: 'JWT',
+  openapi: 'OpenAPI',
+  opentelemetrycollector: 'OpenTelemetry',
+  healthcheck: 'Health Check',
+  problemdetails: 'Problem Details',
+  mapster: 'Mapster',
+  utils: 'Utils',
+  testbase: 'TestBase'
+}
